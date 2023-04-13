@@ -2,13 +2,8 @@ import os
 import logging
 from PIL import Image
 
-<<<<<<< HEAD
-input_folder = r"C:\Users\Sahil Sahu\Desktop\Smart-Water-Quality-Monitoring-System\algae"
-output_folder = r"C:\Users\Sahil Sahu\Desktop\Smart-Water-Quality-Monitoring-System\palgae"
-=======
 input_folder = r"algae"
 output_folder = r"insect"
->>>>>>> 295fdc7e74f399f7e01e8ca88f6d0b7ec8c0bc68
 
 # Create a logger object to log errors and warnings
 logger = logging.getLogger(__name__)
@@ -49,13 +44,8 @@ for filename in os.listdir(input_folder):
             print(f"Error converting {filename}: {e}")
 
 
-<<<<<<< HEAD
-# input_folder = r"C:\Users\Sahil Sahu\Desktop\Smart-Water-Quality-Monitoring-System\algae"
-# output_folder = r"C:\Users\Sahil Sahu\Desktop\Smart-Water-Quality-Monitoring-System\palgae"
-=======
 input_folder = r"insect"
 output_folder = r"palgae"
->>>>>>> 295fdc7e74f399f7e01e8ca88f6d0b7ec8c0bc68
 
 target_size = (256, 256)
 
