@@ -2,8 +2,8 @@ import os
 import logging
 from PIL import Image
 
-input_folder = r"/Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/algae"
-output_folder = r"/Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/insect"
+input_folder = r"algae"
+output_folder = r"insect"
 
 # Create a logger object to log errors and warnings
 logger = logging.getLogger(__name__)
@@ -44,8 +44,8 @@ for filename in os.listdir(input_folder):
             print(f"Error converting {filename}: {e}")
 
 
-input_folder = r"/Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/insect"
-output_folder = r"/Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/palgae"
+input_folder = r"insect"
+output_folder = r"palgae"
 
 
 # Loop through all the JPEG images in the input folder
