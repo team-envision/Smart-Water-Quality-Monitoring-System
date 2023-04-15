@@ -3,12 +3,15 @@ import json
 import openai
 import requests
 import random
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def download_image(url):
     response = requests.get(url)
     if response.status_code == 200:
         file_name = f"WaterAlgae_{random.randint(0,10000)}.png"
-        file_path = os.path.join(r"variation", file_name)
+        file_path = os.path.join(r"variation_images", file_name)
         with open(file_path, 'wb') as f:
             f.write(response.content)
         print(f"Image saved to {file_path}")
@@ -17,10 +20,9 @@ def download_image(url):
 
 
 
-os.environ["OPENAI_API_KEY"] = "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"
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("OpenAI_API_KEY")
 
-folder_path = r"C:\Users\Sahil Sahu\Desktop\Smart-Water-Quality-Monitoring-System\palgae"
+folder_path = r"png_allok"
 # image_file = "ALGAE3.png"
 
 for filename in os.listdir(folder_path):
@@ -35,5 +37,4 @@ for filename in os.listdir(folder_path):
         response_dict = json.loads(json_string)
         for obj in response_dict["data"]:
             download_image(obj["url"])
-
 
