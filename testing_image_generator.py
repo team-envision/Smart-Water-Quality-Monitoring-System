@@ -3,6 +3,7 @@ import json
 import openai
 import requests
 import random
+import time
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -37,4 +38,5 @@ for filename in os.listdir(folder_path):
         response_dict = json.loads(json_string)
         for obj in response_dict["data"]:
             download_image(obj["url"])
+            time.sleep(20)
 
