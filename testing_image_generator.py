@@ -4,9 +4,11 @@ import openai
 import requests
 import random
 import time
+import os
 from dotenv import load_dotenv
-
 load_dotenv()
+
+api_key = os.getenv('OpenAI_API_KEY')
 
 def download_image(url):
     response = requests.get(url)
@@ -21,7 +23,7 @@ def download_image(url):
 
 
 
-openai.api_key = os.getenv("OpenAI_API_KEY")
+openai.api_key = api_key
 
 folder_path = r"png_allok"
 # image_file = "ALGAE3.png"
@@ -38,5 +40,5 @@ for filename in os.listdir(folder_path):
         response_dict = json.loads(json_string)
         for obj in response_dict["data"]:
             download_image(obj["url"])
-            time.sleep(20)
+            time.sleep(15)
 
