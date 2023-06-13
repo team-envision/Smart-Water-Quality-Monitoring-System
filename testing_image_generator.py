@@ -14,7 +14,7 @@ def download_image(url):
     response = requests.get(url)
     if response.status_code == 200:
         file_name = f"WaterAlgae_{random.randint(0,10000)}.png"
-        file_path = os.path.join(r"variation_images", file_name)
+        file_path = os.path.join(r"train", file_name)
         with open(file_path, 'wb') as f:
             f.write(response.content)
         print(f"Image saved to {file_path}")
