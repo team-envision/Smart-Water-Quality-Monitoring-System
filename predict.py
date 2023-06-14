@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cv2
 
 
-model_path = '/runs/weights/last.pt'
+model_path = 'model path after train'
 
 image_path = '/Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/data/images/val/WaterAlgae_8717.png'
 
