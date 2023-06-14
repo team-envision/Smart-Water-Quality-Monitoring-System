@@ -1,0 +1,6 @@
+path: /Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/data
+train: images/train 
+val: images/val  
+
+nc: 1
+names: ['algae']
