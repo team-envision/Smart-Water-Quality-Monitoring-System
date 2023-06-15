@@ -3,8 +3,8 @@ import os
 import cv2
 
 
-input_dir = '/Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/data/masks/val'
-output_dir = '/Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/data/labels/val'
+input_dir = 'C:/Users/Sahil Sahu/Desktop/Smart-Water-Quality-Monitoring-System/data/masks/val'
+output_dir = 'C:/Users/Sahil Sahu/Desktop/Smart-Water-Quality-Monitoring-System/data/labels/val'
 
 for j in os.listdir(input_dir):
     image_path = os.path.join(input_dir, j)

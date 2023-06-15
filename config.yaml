@@ -1,5 +1,5 @@
-path: /Users/muntazirjahangir/Smart-Water-Quality-Monitoring-System/data
-train: images/train 
+path: C:/Users/Sahil Sahu/Desktop/Smart-Water-Quality-Monitoring-System/data
+train: images/train
 val: images/val  
 
 nc: 1
